@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #332F29;
+    font-family: serif;
+}
+
+#contenedor {
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    background: #8FA68E;
+    color: #000;
+}
+
+nav {
+    background: #CC9966;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+section {
+    background: #F1F2C0;
+    padding: 20px;
+}
+
+aside {
+    background: #CCC59E;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    #contenedor {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
