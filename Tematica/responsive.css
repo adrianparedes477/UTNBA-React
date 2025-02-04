@@ -1,0 +1,33 @@
+/* Dispositivos pequeños (móviles) */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    /* Ajustes específicos para secciones */
+    #productos-container .producto {
+        margin-bottom: 20px;
+    }
+
+    #formulario-contacto .form-control {
+        width: 100%;
+    }
+}
+
+/* Tabletas */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+/* Escritorio */
+@media screen and (min-width: 993px) {
+    .container {
+        max-width: 1140px;
+    }
+}
