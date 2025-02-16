@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.listas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lista-container {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.lista-alumnos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alumno-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.nota {
+    font-weight: bold;
+    float: right;
+}
+
+.aprobado {
+    color: #28a745;
+}
+
+.reprobado {
+    color: #dc3545;
+}
