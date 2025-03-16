@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API con Rutas Dinámicas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API con Rutas Dinámicas</h1>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="openTab(event, 'busquedaProductos')">Búsqueda de Productos</div>
+            <div class="tab" onclick="openTab(event, 'detalleProducto')">Detalle de Producto</div>
+        </div>
+        
+        <div id="busquedaProductos" class="tab-content active">
+            <div class="card">
+                <h2>Búsqueda de Productos</h2>
+                <form id="formBusqueda">
+                    <div class="form-group">
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria">
+                            <option value="todas">Todas las categorías</option>
+                            <option value="Electrónica">Electrónica</option>
+                            <option value="Computadoras">Computadoras</option>
+                            <option value="Accesorios">Accesorios</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="precioMin">Precio Mínimo:</label>
+                        <input type="number" id="precioMin" name="precioMin" placeholder="Ej: 100">
+                    </div>
+                    <div class="form-group">
+                        <label for="precioMax">Precio Máximo:</label>
+                        <input type="number" id="precioMax" name="precioMax" placeholder="Ej: 1000">
+                    </div>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="detalleProducto" class="tab-content">
+            <div class="card">
+                <h2>Ver Detalle de Producto</h2>
+                <div class="form-group">
+                    <label for="productoId">ID del Producto:</label>
+                    <input type="number" id="productoId" name="productoId" placeholder="Ej: 1, 2, 3" min="1">
+                </div>
+                <button onclick="verProducto()">Ver Producto</button>
+            </div>
+        </div>
+        
+        <div id="resultados">
+            <p>Los resultados aparecerán aquí...</p>
+        </div>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
